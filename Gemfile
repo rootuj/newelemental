@@ -10,8 +10,6 @@ gem 'therubyracer'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'rake'
 gem 'term-ansicolor'
-gem 'simple_form'
-
 
 
 group :development, :test do

@@ -162,3 +162,53 @@ p {
   color: #fff;
   text-decoration: none;
 }
+
+.announcements
+{
+  border: 10px solid orange;
+  margin-bottom: 20px;
+
+}
+.announcements h1
+{
+  color: #fff;
+  text-align: left;
+}
+
+.announcements h2
+{
+  font-size: 30px;
+  color: #fff;
+  text-align: left;
+}
+.item {
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 1.4em;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #444;
+    width: 25%;
+}
+
+.item.w2
+{
+  width: 50%;
+}
+.item img {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.content {
+    margin: 10px 0 5px;
+}
