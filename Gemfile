@@ -11,7 +11,6 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'rake'
 gem 'term-ansicolor'
 
-b
 group :development, :test do
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
