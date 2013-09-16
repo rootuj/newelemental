@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Elemental</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Elemental Pizza</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="logo-container span3">
+            <%= link_to "Elemental", '#', id: "logo" %>
+            <span class="tagline span2">Wood Fired Pizza</span>
+          </div>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "home",    '#' %></li>
+              <li><%= link_to "menu",    '#' %></li>
+              <li><%= link_to "catering", '#' %></li>
+              <li><%= link_to "facebook",    '#' %></li>
+              <li><%= link_to "find us",    '#' %></li>
+              <li><%= link_to "story", '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+    </div>
+  </body>
 </html>

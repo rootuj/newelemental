@@ -1,7 +1,18 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass','~>2.3.2.1'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails', '>=3.2'
+gem 'uglifier', '>= 1.3.0'
+gem 'therubyracer'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'rake'
+gem 'term-ansicolor'
+gem 'simple_form'
+
+
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
@@ -14,21 +25,11 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
-group :assets do
-  gem 'sass-rails',   '~> 4.0.0'
-  gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-  gem 'uglifier', '>= 1.3.0'
-  gem 'twitter-bootstrap-rails'
-  gem 'less-rails'
-  gem 'therubyracer'
-  gem 'twitter-bootstrap-rails'
-end
-
-
+ 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 

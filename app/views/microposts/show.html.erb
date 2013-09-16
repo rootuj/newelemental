@@ -1,14 +1,22 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @micropost.content %>
-</p>
+<div class="row">
+    <div class="span6 offset3">
+        <div class="well">
+          <%= image_tag @micropost.image %>
+        	<p id="notice"><%= notice %></p>
 
-<p>
+			<p>
+  		<strong>Content</strong>
+  		<%= @micropost.content %>
+			</p>
+
+			<p>
   <strong>User:</strong>
   <%= @micropost.user_id %>
 </p>
 
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
 <%= link_to 'Back', microposts_path %>
+    </div>
+    </div>
+</div>

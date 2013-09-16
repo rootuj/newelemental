@@ -1,0 +1,164 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+
+@font-face {
+font-family: '#{$font-family}';
+src: url(font-path('#{$font-filename}.ttf')) format('truetype');
+font-weight: $font-weight;
+font-style: $font-style;
+font-stretch: $font-stretch;
+}
+
+}
+
+@include declare-font-face('Museo', 'Museo300-Regular', 300);
+@include declare-font-face('Museo', 'Museo700-Regular', 700);
+
+html {
+  overflow-y: scroll;
+}
+
+.row
+{
+  margin-top: 30px;
+}
+.hero-unit
+{
+  padding: 0px;
+}
+
+.marketing-unit 
+{
+  background-color: #000;
+  color: #fff;
+  text-align:left;
+  min-height: 400px;
+  padding: 14px;
+  margin-left: 10px;
+
+}
+
+.marketing-unit h1
+{
+  font-weight: 200;
+   font-size: 2em;
+}
+.marketing-unit h2
+{
+  font-family: "Museo";
+  text-align: left;
+  font-size: 1.7em;
+}
+
+.right-column
+{
+  margin: 0;
+}
+
+.image-unit
+{
+  margin:0 0 10px 10px;
+}
+
+.navbar .nav.pull-right
+{
+  font-family: "Sans Serif";
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-top: 10px;
+}
+
+body {
+  padding-top: 60px;
+  margin: 0;
+  background-image: url(/assets/background.png);
+  background-repeat:repeat-y;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Museo";
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+body {
+	font-family: "Museo";
+  font-weight: 300;
+	font-size: 12px;
+	line-height: 21px;
+	color: #333;
+}
+
+p {
+
+  font-family: "Museo";
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.logo-container
+{
+  margin-left: 0;
+}
+
+.tagline
+{
+  font-size: 1.3em;
+  color: #fff;
+  padding-left: 10px;
+  text-align: right;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 3em;
+  color: #fff;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
