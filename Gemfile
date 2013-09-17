@@ -10,6 +10,7 @@ gem 'therubyracer'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'rake'
 gem 'term-ansicolor'
+gem 'aws-sdk'
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
@@ -43,7 +44,7 @@ end
 
 group :production do
   gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'rails_12factor'
 end
 
 # Gems used only for assets and not required
