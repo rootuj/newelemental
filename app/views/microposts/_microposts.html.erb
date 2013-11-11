@@ -1,6 +1,6 @@
 
 		<% @microposts.each do |micropost| %>
-		   <div class="item">
+		   <div class="item span3">
       		 <%= link_to (image_tag micropost.image(:medium)), micropost %>
       		 <p class= 'content'>
       		 	<%= micropost.content %>

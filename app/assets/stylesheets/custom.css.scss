@@ -23,7 +23,7 @@ html {
 
 .row
 {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .hero-unit
 {
@@ -32,7 +32,7 @@ html {
 
 .marketing-unit 
 {
-  background-color: #000;
+  background-color: #181818;
   color: #fff;
   text-align:left;
   min-height: 400px;
@@ -65,7 +65,6 @@ html {
 
 .navbar .nav.pull-right
 {
-  font-family: "Sans Serif";
   font-size: 1.5em;
   font-weight: 100;
   padding-top: 10px;
@@ -75,7 +74,8 @@ body {
   padding-top: 60px;
   margin: 0;
   background-image: url(/assets/background.jpg);
-  background-repeat:repeat-y;
+  background-repeat:repeat;
+  background-size: 50%;
 }
 
 section {
@@ -184,18 +184,18 @@ p {
 .item {
     margin: 5px;
     padding: 5px;
-    background-color: #fff;
+    background-color: #181818;
     font-size: 15px;
     font-weight: bold;
-    color: #000;
+    color: #999;
     text-align: center;
     line-height: 1.4em;
     float: left;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
     box-shadow: 1px 1px 10px #444;
-    width: 25%;
+    
 }
 
 .item.w2
